@@ -11,6 +11,7 @@
             padding: 20px;
             background-color: #000;
             color: #fff;
+            margin: 0;
         }
         header {
             display: flex;
@@ -26,11 +27,14 @@
             margin: 0;
         }
         .button-container {
+            display: flex;
+            flex-direction: column; /* Alineación vertical */
+            align-items: center; /* Centrar botones horizontalmente */
             margin-top: 20px;
         }
-        .button {
+        .button, a {
             display: inline-block;
-            padding: 10px 20px;
+            padding: 15px 40px; /* Aumenta el padding para más altura */
             background-color: #007bff;
             color: #fff;
             text-decoration: none;
@@ -38,22 +42,12 @@
             margin: 10px;
             font-size: 16px;
             transition: background-color 0.3s ease;
+            width: 100%; /* Ancho completo del contenedor */
+            max-width: 300px; /* Ancho máximo para evitar que se expandan demasiado */
+            text-align: center;
+            box-sizing: border-box; /* Incluye padding y border en el ancho total */
         }
-        .button:hover {
-            background-color: #0056b3;
-        }
-        a {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #007bff;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
-            margin: 10px;
-            font-size: 16px;
-            transition: background-color 0.3s ease;
-        }
-        a:hover {
+        .button:hover, a:hover {
             background-color: #0056b3;
         }
     </style>
@@ -65,11 +59,11 @@
     </header>
 
     <div class="button-container">
-        <a href="https://us-west-2b.online.tableau.com/#/site/howdycom/workbooks/1346504?:origin=card_share_link" class="button">Partners View</a>
-        <a href="https://us-west-2b.online.tableau.com/#/site/howdycom/views/PredictivesKPIS-PartnerMeetingandattendance/PartnerMeetings?:iid=1" class="button">Partner Meetings Attendance</a>
-        <a href="https://us-west-2b.online.tableau.com/#/site/howdycom/views/PredictivesKPIS-PartnerMeetingandattendance/ParterMeetings-Qualityattendance" class="button">Partners Summary</a>
+        <a href="https://us-west-2b.online.tableau.com/#/site/howdycom/views/NPSDashboard/D2_EMmetrics-Partner?:iid=1" class="button">Partner Nps</a>
+        <a href="https://us-west-2b.online.tableau.com/#/site/howdycom/views/PredictivesKPIS-PartnerMeetingandCompany-wideandIndividualPartnerMeetingMetrics?:iid=1" class="button">Partner Meetings</a>
+        <a href="https://us-west-2b.online.tableau.com/#/site/howdycom/views/OpportunitiesPositions/Opportunitiespositions" class="button">Opportunities & Positions</a>
+        <a href="https://lookerstudio.google.com/u/0/reporting/8ac9bd98-d1b6-4e5f-8de4-847d3a3fe9f0/page/p_j5qqh3tcbd" class="button">Professionals Dashboard</a>
         <!-- Agrega más botones según sea necesario -->
     </div>
 </body>
 </html>
-       
